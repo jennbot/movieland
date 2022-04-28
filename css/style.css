@@ -1,0 +1,310 @@
+body {
+  font-family: 'Karla', serif;
+  font-size: 13px;
+  padding: 30px;
+  background: #f7f7f7;
+}
+
+#histogram {
+  position: absolute;
+  top: 970px;
+}
+
+#circular-packing {
+  position: absolute;
+  top: 170px;
+}
+
+#slider {
+  position: absolute;
+  top: 820px;
+}
+
+header {
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+}
+
+.legend-title,
+.axis-title {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.legend-labels,
+.hist-legend-labels,
+.radius-labels,
+.axis text,
+.axis-text {
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+}
+
+.legend-text,
+#genre-labels,
+label,
+#runtime,
+input,
+button {
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+}
+
+/* Marks */
+.point:hover {
+  stroke: #333;
+}
+.bars {
+  shape-rendering: crispEdges;
+}
+
+.selected {
+  stroke: #000;
+  stroke-width: 1.5;
+}
+
+.axis line {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.axis path {
+  display: none;
+}
+
+#label {
+  padding: 10px;
+}
+
+/* Tooltip */
+#tooltip-circular-packing {
+  position: absolute;
+  display: none;
+  background: #fff;
+  box-shadow: 3px 3px 3px 0px rgb(92 92 92);
+  border: 1px solid #ddd;
+  font-size: 12px;
+  padding: 8px;
+  min-width: 160px;
+  color: #333;
+}
+.tooltip-title {
+  color: #000;
+  font-family: 'Lora', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+#force-tooltip ul {
+  margin: 5px 0 0 0;
+  padding-left: 5px;
+}
+
+.source {
+  font-size: 10px;
+  color: #888;
+}
+.source a {
+  color: #888;
+}
+
+.connection {
+  stroke: #808080;
+}
+
+.histo {
+  position: absolute;
+  left: 900px;
+  top: 150px;
+}
+
+.row2 {
+  position: absolute;
+  top: 1000px;
+}
+
+#search-container {
+  position: relative;
+  top: 10px;
+}
+
+#my_dataviz {
+  position: relative;
+  top: -70px;
+  font-family: 'Karla', sans-serif;
+}
+
+#search-box {
+  position: relative;
+  top: 20px;
+  left: 200px;
+}
+
+.node:hover {
+  stroke: #333;
+  fill: #333;
+  shape-rendering: crispEdges;
+}
+
+.activeNode {
+  fill-opacity: 100;
+  stroke: black;
+  stroke-width: 3;
+}
+
+.activeLink {
+  stroke: #333;
+  fill: #333;
+}
+.slider-holder {
+  width: 700px;
+}
+.ticks {
+  font: 14px sans-serif;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: #bbb;
+  stroke-width: 10px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  cursor: crosshair;
+}
+
+.sel-range {
+  stroke: #191970;
+  stroke-width: 8px;
+}
+
+.handle {
+  fill: #b0c4de;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+  cursor: pointer;
+}
+.handle:hover {
+  fill: #4682b4;
+}
+.handle.active {
+  fill: #4682b4;
+}
+
+#action-label {
+  fill: black;
+  left: 173px;
+  bottom: 320px;
+  transform-origin: 173px 320px;
+}
+
+#adventure-label {
+  fill: black;
+  position: absolute;
+  left: 410px;
+  bottom: 355px;
+}
+
+#animation-label {
+  fill: black;
+  position: absolute;
+  left: 820px;
+  bottom: 355px;
+}
+
+#biography-label {
+  fill: black;
+  position: absolute;
+  left: 615px;
+  bottom: 355px;
+}
+
+#drama-label {
+  fill: black;
+  position: absolute;
+  left: 173px;
+  bottom: 20px;
+}
+
+#crime-label {
+  fill: black;
+  position: absolute;
+  left: 420px;
+  bottom: 50px;
+}
+
+#comedy-label {
+  fill: black;
+  position: absolute;
+  left: 615px;
+  bottom: 50px;
+}
+
+#other-label {
+  fill: black;
+  position: absolute;
+  left: 830px;
+  bottom: 50px;
+}
+
+#force-tooltip {
+  position: absolute;
+  display: none;
+  background: #fff;
+  box-shadow: 3px 3px 3px 0px rgb(92 92 92);
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px;
+  min-width: 160px;
+  color: #333;
+}
+
+.outline {
+  stroke: black;
+  stroke-opacity: 0.8;
+  fill: none;
+  stroke-width: 1px;
+}
+
+.explanation {
+  position: absolute;
+  left: 1095px;
+  top: 100px;
+  width: 235px;
+  word-break: break-word;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 12px
+
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 15px;
+}
+
+header {
+  position: absolute;
+  left: 680px;
+}
+

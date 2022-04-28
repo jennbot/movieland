@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movieland</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+    </style>
+
+</head>
+<body>
+
+<!--top half-->
+    <header>Movieland</header>
+    <!--spacing for between title and graphs below-->
+    <h1><br><br><br></h1>
+
+    <label for="runtime">Select a runtime:</label>
+
+    <select name="runtime" id="runtime" onchange="runTimeFilter(this.value)">
+        <option value="0" selected="selected">All runtimes</option>
+      <option value="1">100 minutes or less</option>
+      <option value="2">Greater than 100 and less than or equal to 120 minutes</option>
+      <option value="3">Greater than 120 and less than or equal to 150 minutes</option>
+      <option value="4">Greater than 150 minutes</option>
+    </select>
+
+    <div class="c-packing">
+        <div id="circular-packing"></div>
+        <div id="tooltip-circular-packing"></div>
+        <!-- Circle Borders-->
+        <svg height="700" width="1300">
+            <circle cx="160" cy="175" r="135" stroke="black" stroke-opacity="0.75" fill="none"></circle>
+            <circle cx="405" cy="180" r="80" stroke="black" stroke-opacity="0.75" fill="none"></circle>
+            <circle cx="605" cy="180" r="85" stroke="black" stroke-opacity="0.75" fill="none"></circle>
+            <circle cx="805" cy="180" r="95" stroke="black" stroke-opacity="0.75" fill="none"></circle>
+            <circle cx="160" cy="485" r="123" stroke="black" stroke-opacity="0.75" fill="none"></circle>
+            <circle cx="405" cy="485" r="70" stroke="black" stroke-opacity="0.75" fill="none"></circle>
+            <circle cx="605" cy="485" r="105" stroke="black" stroke-opacity="0.75" fill="none"></circle>
+            <circle cx="805" cy="485" r="60" stroke="black" stroke-opacity="0.75" fill="none"></circle>
+        </svg>
+
+        <div class="explanation">
+            <p>
+                <h1>Can't decide on a movie?</h1>
+                Movieland is here to help! Each node represents a movie;
+                hover to get more information and click to highlight movies with like actors or directors.
+                Want to quickly see all the movies belonging to a certain rating distribution? Click on a
+                bucket in the histogram to see all movies that score within that range. Want to look for movies
+                based on actors or directors? Search for an actor/director or click on their node to highlight all
+                of their works in the last decade.
+            </p>
+        </div>
+        <div class="container">
+            <svg id = 'slider'></svg>
+        </div>
+    </div>
+
+
+<!-- second half-->
+
+    <div class="histo">
+        <svg id='histogram'></svg>
+    </div>
+
+    <div class="row2">
+        <div id="force-directed-graph"></div>
+        <div id="search-container">
+            <h1 id="forceTitle">Actor-Director Connection Chart</h1>
+            <div id="search-box">
+                <input type="text" placeholder="Search for actor or director" name="search" id="searchInput">
+                <button type="submit" onclick="search()">Submit</button>
+            </div>
+            <svg id="my_dataviz"></svg>
+        </div>
+    </div>
+
+    <div id="force-tooltip"></div>
+
+
+
+
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/forceDirectedGraph.js"></script>
+    <script src="js/circularPacking.js"></script>
+    <script src="js/yearSlider.js"></script>
+</body>
+</html>
