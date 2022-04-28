@@ -9,4 +9,6 @@ words, users will be able to look at a large variety of movies and their ratings
 to others within and outside of their respective genres. Furthermore, there will be additional information
 regarding actors and directors that allow an extra layer of filtering if need be.
 
+
+
 This visualization was created for CPSV 436V 2021 W2 together by Jennifer L., Aaron Z., and Xinyu. L.
