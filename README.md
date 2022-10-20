@@ -13,6 +13,5 @@ regarding actors and directors that allow an extra layer of filtering if need be
 
 This visualization was created for CPSV 436V 2021 W2 together by Jennifer L., Aaron Z., and Xinyu. L.
 
-![link](https://movieland-datavis.netlify.app/)
-
+<a href="[url](https://movieland-datavis.netlify.app/">Demo</a>
 
